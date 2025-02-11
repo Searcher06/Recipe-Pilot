@@ -33,7 +33,7 @@ export function MainContent() {
                     return response.json()
                 }).then((dat) => {
                     setRecipes(dat)
-                    setLoading(false)
+                    setLoading(false);
                 })
             }).catch((err) => {
                 console.log(err.message)
