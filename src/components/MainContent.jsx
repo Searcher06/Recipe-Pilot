@@ -1,10 +1,8 @@
-import SearchResult from "./SearchResult"
-import SearchSection from "./SearchSection"
 import Categories from "./Categories"
 import Services from "./Services"
 import Reviews from "./Reviews"
 import { useEffect, useState } from "react"
-import Banner from "./banner"
+import { Banner } from "./banner"
 
 export function MainContent() {
     let [input, setInput] = useState("")

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-function Banner(){
+export function Banner(){
   
     return (
       <>
@@ -18,5 +18,3 @@ function Banner(){
       </>
     )
   }
-  
-  export default Banner
