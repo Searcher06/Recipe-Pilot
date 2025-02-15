@@ -5,7 +5,7 @@ function Footer() {
     <footer>
         <div className="compony">
                 <p className="name">Recipe Pilot <i className="fas fa-utensils"></i></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laboriosam recusandae id animi voluptatem natus dolor aliquam! Libero, velit tempore?</p>
+                <p id={"company"}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laboriosam recusandae id animi voluptatem natus dolor aliquam! Libero, velit tempore?</p>
                 <div className="socials">
                     <i className="fab fa-facebook"></i>
                     <i className="fab fa-instagram"></i>

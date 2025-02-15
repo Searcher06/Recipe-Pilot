@@ -9,7 +9,7 @@ function SearchResult({recipe,loading,error,recipes}) {
   // }
   if(loading) return <Loader />
   if(error) return <h1>{error}</h1>
-  if(recipes == null) return <h1 style={{fontStyle:"italic"}}>search for a recipe</h1>
+  if(recipes == null) return <h1 id="ino" style={{fontStyle:"italic"}}>search for a recipe</h1>
   
   return (
     <>

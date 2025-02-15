@@ -2,8 +2,7 @@ import Categories from "./Categories"
 import Services from "./Services"
 import Reviews from "./Reviews"
 import { useEffect, useState } from "react"
-import { Banner } from "./banner"
-
+import { Banner } from "../components/Banner"
 export function MainContent() {
     let [input, setInput] = useState("")
     let [recipe, setRecipe] = useState("")

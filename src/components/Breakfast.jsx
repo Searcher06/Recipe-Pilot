@@ -39,19 +39,8 @@ export function Breakfast({ setCategory,category }){
                           <i className="fas fa-heart"></i>
                         </div>
                         <div className="button-view">
-                              <Link to={`/recipeinfo/${current.id}`} style={{
-                                height: "30px",
-                                display:"flex",
-                                border: "none",
-                                borderRadius: "4px",
-                                backgroundColor: "rgb(211, 62, 3)",
-                                color:"white",
-                                cursor: "pointer",
-                                textDecoration:"none",
-                                justifyContent:"center",
-                                alignItems:"center",
-                                width:"60px",
-                                fontSize:"14px"
+                              <Link className="custom_link" to={`/recipeinfo/${current.id}`} style={{
+                                
                               }}>see more</Link>
                             </div>
                      </div>

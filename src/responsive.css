@@ -1,0 +1,393 @@
+@media (max-width:380px){
+    .navbar .logo{
+        font-size: 16px;
+        font-weight: 100;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+    .hamburger{
+        display: block;
+    }
+    .links-cont{
+        display: none;
+    }
+    .banner-section h1{
+        font-size: 23px;
+    }
+    .banner-section{
+        height: 350px
+    }
+    .banner-section span{
+        font-size: 16px
+    }
+    .banner-section button{
+        width: 78px;
+        height: 25px;
+        font-size: 10px
+    }
+    .categories .linkss p{
+        font-size: 15px
+    }
+    .recipe-card{
+        width: 140px;
+        height: 190px;
+    }
+    .recipe-name{
+        font-size: 13px;
+    }
+    .ratings i{
+        font-size: 13px;
+    }
+    .recipe-card .button-view a{
+        display: inline-block;
+        height: 25px;
+        width: 55px;
+        line-height:25px;
+        font-size: 12px;
+        text-align: center
+    }
+    .recipe-card .clicks{
+        margin-top: 0px;
+        margin-bottom: 4px
+    }
+    .umbrella{
+        height: 12px
+    }
+    .services .message{
+        font-size: 23px
+    }
+    .services .boxes{
+        width: 180px;
+    }
+    .services .boxes .service-name{
+        font-size:15px;
+    }
+    .services .full-des{
+        font-size: 13px
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .compony{
+        width: 100%;
+    }
+    .side{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse
+    }
+    .compony .name{
+        font-size: 20px
+    }
+    .compony #company{
+        font-size: 15px;
+    }
+    .side .sidelinks p a{
+        font-size: 16px;
+    }
+    .compony .socials i{
+        font-size: 19px;
+    }
+    
+/*   Recipes page   */
+    .search-section{
+        height: 350px
+    }
+    .search-section h1{
+        font-size: 32px;
+    }
+    .search-section input{
+       
+    }
+    .search-section .searchContainer{
+        width: 250px;
+    }
+    .search-section .searchContainer input,.searchContainer button{
+        height: 35px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+    .searchContainer button{
+        width: 50px
+    }
+    .search-section .searchContainer input{
+        font-size: 11px
+    }
+    .search-section p{
+        font-size: 14px
+    }
+    .seasonal-recipe #seas{
+        font-size: 23px
+    }
+    .seasonal-recipe .recipe-card .fa-star{
+        font-size: 12px
+    }
+    .seasonal-recipe #time{
+        font-size: 13px
+    }
+    .maincontent #ino{
+        font-size: 23px;
+        font-weight: 400
+    }
+    .quickmeal{
+        margin-top: 30px
+    }
+    .quickmeal .message h1{
+        font-size: 23px
+    }
+    .quickmeal .message p{
+        font-size: 15px
+    }
+    
+}
+
+
+@media (max-width:480px) and (min-width:381px){
+    .navbar .logo{
+        font-size: 19px;
+        font-weight: 100;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+    .hamburger{
+        display: block;
+    }
+    .links-cont{
+        display: none;
+    }
+    .favourite{
+        margin-right: 12px;
+        
+    }
+    .favourite :nth-child(2){
+        width: 70px;
+        font-size: 12px
+    }
+    .links-cont .links a{
+        font-size: 17px;
+    }
+    .links-cont{
+        align-items: center;
+        width: 60%
+    }
+    .banner-section{
+        height: 390px
+    }
+    .banner-section h1{
+        font-size: 34px;
+    }
+    .categories .linkss p{
+        font-size: 15px
+    }
+    .recipe-card{
+        width: 140px;
+        height: 190px;
+    }
+    .recipe-name{
+        font-size: 13px;
+    }
+    .ratings i{
+        font-size: 13px;
+    }
+    .recipe-card .button-view a{
+        display: inline-block;
+        height: 25px;
+        width: 55px;
+        line-height:25px;
+        font-size: 12px;
+        text-align: center
+    }
+    .banner-section button{
+        width: 78px;
+        height: 35px;
+        font-size: 11px;
+        border-radius: 4px;
+    }
+     .umbrella{
+        height: 18px;
+    }
+    .services .message{
+        font-size: 23px
+    }
+    .services .boxes{
+        width: 180px;
+    }
+    .services .boxes .service-name{
+        font-size:15px;
+    }
+    .services .full-des{
+        font-size: 13px
+    }
+        footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .compony{
+        width: 100%;
+    }
+    .side{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse
+    }
+    .compony .name{
+        font-size: 20px
+    }
+    .compony #company{
+        font-size: 15px;
+    }
+    .side .sidelinks p a{
+        font-size: 16px;
+    }
+    .compony .socials i{
+        font-size: 19px;
+    }
+/*   Recipes page   */
+    .search-section{
+        height: 360px;
+    }
+    .search-section h1{
+        font-size: 42px;
+    }
+    .search-section input{
+       
+    }
+    .search-section .searchContainer{
+        width: 310px;
+    }
+    .search-section .searchContainer input,.searchContainer button{
+        height: 37px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+    .searchContainer button{
+        width: 50px
+    }
+    .searchContainer button{
+        width: 50px
+    }
+    .search-section .searchContainer input{
+        font-size: 11px
+    }
+    .search-section p{
+        font-size: 17px
+    }
+    .seasonal-recipe #seas{
+        font-size: 23px
+    }
+    .seasonal-recipe .recipe-card .fa-star{
+        font-size: 12px
+    }
+    .seasonal-recipe #time{
+        font-size: 13px
+    }
+    .maincontent #ino{
+        font-size: 23px;
+        font-weight: 400
+    }
+    .quickmeal{
+        margin-top: 30px
+    }
+    .quickmeal .message h1{
+        font-size: 23px
+    }
+    .quickmeal .message p{
+        font-size: 15px
+    }
+    
+}
+
+@media (max-width:767px) and (min-width:481px){
+      .navbar .logo{
+        font-size: 20px;
+        font-weight: 100;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+    .banner-section{
+        height: 100vh;
+        margin-top: 60px;
+    }
+     .favourite{
+        margin-right: 12px;
+        
+    }
+     .links-cont .links a{
+        font-size: 18px;
+    }
+    .links-cont{
+        align-items: center;
+        width: 65%
+    }
+
+    
+/*   Home   */
+    .favourite{
+        margin-right: 3px;
+        
+    }
+     .recipe-card .button-view a{
+        display: inline-block;
+        height: 30px;
+        width: 60px;
+        line-height:30px;
+        font-size: 12px;
+        text-align: center;
+         font-size: 13px
+    }
+     .recipe-card{
+        width: 190px;
+         height: 244px
+    }
+    .recipe-name{
+        font-size: 16px;
+    }
+    .ratings i{
+        font-size: 15px;
+    }
+    .recipe-card .button-view a{
+        display: inline-block;
+        height: 30px;
+        width: 55px;
+        line-height:30px;
+        font-size: 12px;
+        text-align: center
+    }
+    .recipe-card .clicks{
+        margin-top: 0px;
+    }
+    .umbrella {
+        height: 20px
+    }
+    .services .message{
+        font-size: 29px
+    }
+    .services-container .boxes{
+        width: 200px;
+        font-size: 15px;
+    }
+    .services-container .service-name{
+        font-size: 17px;
+        font-style:italic
+    }
+    .review-container .review-quote{
+        font-size: 17px;
+    }
+    .banner-section button{
+        width: 90px;
+        font-size: 12px;
+        font-weight: 100;
+    }
+    .banner-section h1 {
+        font-size: 50px
+    }
+
+
+}

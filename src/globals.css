@@ -210,6 +210,22 @@ body {
     width:95%;
 
   }
+  .custom_link{
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    display:inline-block;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(211, 62, 3);
+    color:white;
+    cursor: pointer;
+    text-decoration:none;
+    justify-content:center;
+    align-items:center;
+    width:60px;
+    font-size:14px;
+  }
   .recipe-card .lower-des #col{
     /* border: 1px solid; */
   }

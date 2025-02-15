@@ -33,7 +33,7 @@ function SearchSection2({recipe,recipes,loading,setLoading,error,setRecipe,input
 
     <section className="quickmeal">
         <div className="message">
-            <h1>Are you in a hurry  <i className="far fa-clock"></i></h1>
+            <h1 id="im">Are you in a hurry  <i className="far fa-clock"></i></h1>
             <p>check out some quick meals ready in 3 mins</p>
         </div>
         <Quickmeal />

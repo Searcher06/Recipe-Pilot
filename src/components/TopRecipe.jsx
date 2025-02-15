@@ -6,7 +6,7 @@ export function TopRecipe(){
     if(error)return <h1>{error}</h1>
     if(recipe.length == 0) return <h1>wait or refresh the page</h1>
     return <section className="seasonal-recipe">
-    <h1>Top trending <i className="fas fa-star"></i></h1>
+    <h1 id="seas">Top trending <i className="fas fa-star"></i></h1>
     <div className="top-trending-container">
         {
             recipe[0].results.slice(6,12).map((current)=>{
@@ -17,9 +17,7 @@ export function TopRecipe(){
                              <div className="recipe-name">
                                  {current.title}
                              </div>
-                             <div className="des">
-                             A rich and creamy curry made with tender chickpeas, tomatoes, and aromatic spices,
-                             </div>
+                             
                              <div className="lower-des">
                                  <p>
                                     <i className="fas fa-star"></i>
@@ -28,7 +26,7 @@ export function TopRecipe(){
                                     <i className="fas fa-star"></i>
                                     <i className="fas fa-star"></i>
                                 </p>
-                                 <p><i className="fa fa-clock"></i> 20 mins</p>
+                                 <p id="time"><i className="fa fa-clock"></i> 20 mins</p>
                              </div>
                          </div>
             })

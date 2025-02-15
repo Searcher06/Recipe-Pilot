@@ -1,0 +1,76 @@
+/* General Styling */
+.hamburger-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Hamburger Button */
+.hamburger {
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #ff8800; /* Orange color */
+  cursor: pointer;
+  display: none; /* Hidden on large screens */
+  padding: 10px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  margin-right: 10px;
+}
+
+.hamburger:hover {
+  color: #ff6600; /* Darker orange */
+}
+
+/* Rotate animation when active */
+.menu-list.open + .hamburger {
+  transform: rotate(90deg);
+}
+
+/* Menu List */
+.menu-list {
+  display: none;
+  flex-direction: column;
+  background: rgba(238, 231, 231, 0.95); /* Light background with transparency */
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 220px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Show menu when open */
+.menu-list.open {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Menu Links */
+.menu-list a {
+  color: #222;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px;
+  display: block;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.menu-list a:hover {
+  background: #ff8800; /* Orange hover effect */
+  color: white;
+}
+
+/* Mobile Styles */
+/* @media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+} */
