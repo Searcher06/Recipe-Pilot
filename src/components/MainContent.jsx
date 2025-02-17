@@ -41,7 +41,7 @@ export function MainContent() {
         }
     }, [recipe, url])
     return <>
-        <div className="maincontent" style={{width:"100%"}}>
+        <div className="maincontent">
             <Banner />
             <Categories />
             <Services />

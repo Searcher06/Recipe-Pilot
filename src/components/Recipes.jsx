@@ -5,8 +5,8 @@ import { useContext } from "react";
 import { ThemeContext } from "../Context/Context";
 import { useState,useEffect } from "react";
  export function Recipes() {
-  let {theme} = useContext(ThemeContext);
-  let [input, setInput] = useState("")
+  const { theme } = useContext(ThemeContext);
+  const [input, setInput] = useState("")
       const [recipe, setRecipe] = useState("")
       const [recipes, setRecipes] = useState(null)
       const [loading, setLoading] = useState();
@@ -53,9 +53,10 @@ import { useState,useEffect } from "react";
     <Navbar />
 
     <div className="maincontent">
-    <SearchSection2 input={input} setInput={setInput} 
-    recipe={recipe} empty={empty} setEmpty={setEmpty}
-    setRecipe={setRecipe} setLoading={setLoading} loading={loading} error={error} recipes={recipes} />
+        <SearchSection2 input={input} setInput={setInput} 
+        recipe={recipe} empty={empty} setEmpty={setEmpty}
+        setRecipe={setRecipe} setLoading={setLoading} loading={loading} error={error} recipes={recipes} />
+    
     </div>
     <Footer />
     </div>

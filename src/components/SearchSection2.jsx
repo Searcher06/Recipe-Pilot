@@ -3,8 +3,13 @@ import Categories from "./Categories";
 import SearchResult from "./SearchResult";
 import { Quickmeal } from "./Quickmeal";
 import { TopRecipe } from "./TopRecipe";
-function SearchSection2({recipe,recipes,loading,setLoading,error,setRecipe,input,setInput,empty,setEmpty}) {
+import { useResultContext } from "../Context/Scroll";
 
+function SearchSection2({recipe,recipes,loading,setLoading,error,setRecipe,input,setInput,setEmpty}) {
+    const { resultRef } = useResultContext()
+      function fetch(){
+        resultRef.current.scrollIntoView({ behavior:"smooth",block:"center" })
+      }
   return (
     <>
     <section className="search-section" style={{
@@ -21,6 +26,7 @@ function SearchSection2({recipe,recipes,loading,setLoading,error,setRecipe,input
                 setRecipe(input)
                 setInput("")
                 setLoading(true)
+                fetch()
                 recipe == "" ? (setEmpty((prevState)=>!prevState)):setEmpty(recipe)
             }}><i className="fas fa-search"></i></button>
         </div>
@@ -28,7 +34,7 @@ function SearchSection2({recipe,recipes,loading,setLoading,error,setRecipe,input
     </section>
 
     <div className="maincontent">
-        <SearchResult recipe={recipe} loading={loading} error={error} recipes={recipes}/>
+            <SearchResult recipe={recipe} loading={loading} error={error} recipes={recipes}/>
     </div>
 
     <section className="quickmeal">
