@@ -3,12 +3,9 @@ import { useContext } from "react";
 import { DinnerContext } from "../Context/DinnerContext";
 import { Loader } from "./Loader";
 export function Dinner({ setCategory,category }){
-  const border =  "2px solid rgb(211, 62, 3)"
-
+    const border =  "2px solid rgb(211, 62, 3)"
     const {loading,error,dinner} = useContext(DinnerContext)
-    loading && <Loader />
-    error && <h1>{error}</h1>
-    if(dinner.length == 0) return <Loader />
+    
     return <section className="categories">
     <div className="linkss">
      <p tabIndex={0} style={{
@@ -23,7 +20,8 @@ export function Dinner({ setCategory,category }){
     </div>
     <div className="output">
       {/* <h1>never give up 😈</h1> */}
-       {dinner[0].results.slice(12,18).map((current)=>{
+       {loading ? <Loader /> : error ? `${error}` : dinner.length == 0 ? <Loader /> :
+       dinner[0].results.map((current)=>{
          return <div className="recipe-card" key={current.id}>
                      <img src={current.image} alt="" style={{
                          width:"100%",height:"150px"

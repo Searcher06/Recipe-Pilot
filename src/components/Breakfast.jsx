@@ -6,9 +6,7 @@ export function Breakfast({ setCategory,category }){
     const border =  "2px solid rgb(211, 62, 3)"
   
     const {bloading,berror,breakfast} = useContext(BreakfastContext)
-    bloading && <Loader />
-    berror && <h1>{berror}</h1>
-    if(breakfast.length == 0) return <Loader />
+    
     return <section className="categories">
     <div className="linkss">
      <p tabIndex={0} style={{
@@ -23,7 +21,9 @@ export function Breakfast({ setCategory,category }){
     </div>
     <div className="output">
       {/* <h1>never give up 😈</h1> */}
-       {breakfast[0].results.slice(0,6).map((current)=>{
+       {bloading ? <Loader /> : berror ? `${berror}` : breakfast.length == 0 ? <Loader /> :
+       
+       breakfast[0].results.map((current)=>{
          return <div className="recipe-card" key={current.id}>
                      <img src={current.image} alt="" style={{
                          width:"100%",height:"150px"

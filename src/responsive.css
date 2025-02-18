@@ -7,6 +7,23 @@
         align-items: center;
         width: 50%;
     }
+    #view_link{
+        font-size: 13px;
+        text-decoration: none;
+        color:darkorange;
+    }
+    #clock{
+        font-size: 12px
+    }
+    #col{
+        font-size: 13px
+    }
+    .search-result .message{
+        font-size: 20px;
+    }
+    .recipe-card .des{
+        font-size: 12px;
+    }
     .hamburger{
         display: block;
     }
@@ -158,6 +175,23 @@
         align-items: center;
         width: 50%;
     }
+    #view_link{
+        font-size: 14px;
+        text-decoration: none;
+        color:rgb(228, 139, 32);
+    }
+    #clock{
+        font-size: 13px
+    }
+    #col{
+        font-size: 14px
+    }
+    .search-result .message{
+        font-size: 20px;
+    }
+    .recipe-card .des{
+        font-size: 13px;
+    }
     .hamburger{
         display: block;
     }
@@ -189,11 +223,11 @@
         font-size: 15px
     }
     .recipe-card{
-        width: 140px;
+        width: 150px;
         height: 190px;
     }
     .recipe-name{
-        font-size: 13px;
+        font-size: 14px;
     }
     .ratings i{
         font-size: 13px;
@@ -391,6 +425,30 @@
     }
     .banner-section h1 {
         font-size: 50px
+    }
+     footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .compony{
+        width: 100%;
+    }
+    .side{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse
+    }
+    .compony .name{
+        font-size: 22px
+    }
+    .compony #company{
+        font-size: 17px;
+    }
+    .side .sidelinks p a{
+        font-size: 16px;
+    }
+    .compony .socials i{
+        font-size: 19px;
     }
 
 

@@ -7,10 +7,12 @@ export function LunchProvider({ children }){
   useEffect(()=>{
     
     const testUrl = "./public/breakfast.json"
+    const apiKey = "cf1326b2aabc4e33b90cd9882679e059"
+    const url = `https://api.spoonacular.com/recipes/complexSearch?type=lunch&number=7&apiKey=${apiKey}`;
     
     if(lunch.length == 0){
     console.log("Fetching...")
-    fetch(testUrl).then((response)=>response.json()).then((data)=>{
+    fetch(url).then((response)=>response.json()).then((data)=>{
       setlunch((prevState)=>([...prevState,{...data}]))
       setLoading(false)
     }).catch((err)=>{
@@ -19,7 +21,7 @@ export function LunchProvider({ children }){
     })
   }
   },[])
-  console.log(lunch)
+  console.log("Lunch : ",lunch)
   return <LunchContext.Provider value={{lunch,loading,error}}>
   {children}
   </LunchContext.Provider>

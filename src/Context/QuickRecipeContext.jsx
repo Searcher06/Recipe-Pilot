@@ -8,13 +8,13 @@ export function QuickProvider({ children }){
     const [error,setError] = useState(null)
     const apiKey="cf1326b2aabc4e33b90cd9882679e059"
 
-    const url = `https://api.spoonacular.com/recipes/complexSearch?maxReadyTime=10&apiKey=${apiKey}`
+    const url = `https://api.spoonacular.com/recipes/complexSearch?maxReadyTime=10&number=5&apiKey=${apiKey}`
 
     useEffect(()=>{
     const testUrl = "./public/breakfast.json"
     
     if(recipe.length == 0){
-    fetch(testUrl).then((response)=>response.json()).then((data)=>{
+    fetch(url).then((response)=>response.json()).then((data)=>{
       setRecipe((prevState)=>([...prevState,{...data}]))
       setLoading(false)
     }).catch((err)=>{
