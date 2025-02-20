@@ -1,31 +1,33 @@
 import { useEffect } from "react";
 import Aos from "aos";
+
 const Services = () => {
     useEffect(() => {
         Aos.init({
           duration: 1000, // Animation speed (1 second)
-          once: false, // Change to false so animation happens every scroll
+          once: false, // Animation happens on every scroll
           mirror: true, // Animation plays when scrolling up
         });
     
         Aos.refresh(); // Ensures AOS updates on route changes
       }, []);
+  
   return (
     <>
         <section className="services">
             <div className="umbrella"></div>
-            <div className="message"><p>What we offer <i className="fas fa-gift"></i></p></div>
+            <div className="message"><p>What we offer</p></div>
             <div className="services-container">
                 <div className="boxes" data-aos="zoom-in">
                     <div className="icon">
                         <i className="fas fa-basket-shopping"></i>
                     </div>
                     <div className="service-name">
-                        Recipe search by ingredients
+                        Recipe Search
                     </div>
                     <div className="full-des">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui blanditiis explicabo facere est dolores possimus, quis cum quo animi suscipit!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolore a in. 
+                        Quickly find your favorite recipes by searching their names. Explore a vast collection of dishes, from traditional meals to modern favorites.  
+                        Whether you crave a classic dish or want to try something new, our search makes discovering recipes effortless. Get started now!
                     </div>
                 </div>
 
@@ -37,8 +39,8 @@ const Services = () => {
                         Category-based recipe discovery
                     </div>
                     <div className="full-des">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui blanditiis explicabo facere est dolores possimus, quis cum quo animi suscipit!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolore a in. 
+                        Browse through various categories like breakfast, lunch, or dessert to find recipes that match your cravings.  
+                        Each category is filled with expertly curated dishes, making it easy to cook something delicious every time.
                     </div>
                 </div>
 
@@ -50,8 +52,8 @@ const Services = () => {
                         Step-by-step cooking instructions
                     </div>
                     <div className="full-des">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui blanditiis explicabo facere est dolores possimus, quis cum quo animi suscipit!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolore a in. 
+                        Get clear, easy-to-follow instructions that guide you through every step of cooking your favorite meals.  
+                        Whether you're a beginner or an experienced cook, our detailed steps ensure perfect results every time.
                     </div>
                 </div>
 
@@ -60,18 +62,18 @@ const Services = () => {
                         <i className="fas fa-bookmark"></i>
                     </div>
                     <div className="service-name">
-                        Save and favourite recipes
+                        Save and favorite recipes
                     </div>
                     <div className="full-des">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui blanditiis explicabo facere est dolores possimus, quis cum quo animi suscipit!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolore a in. 
+                        Never lose track of your favorite recipes again. Save the ones you love and access them anytime, anywhere.  
+                        Your personal collection makes meal planning simple and ensures you're always ready to cook something great.
                     </div>
                 </div>
 
             </div>
         </section>
     </>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;
