@@ -5,7 +5,7 @@ function Footer() {
     <footer>
         <div className="compony">
                 <p className="name">Recipe Pilot <i className="fas fa-utensils"></i></p>
-                <p id={"company"}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laboriosam recusandae id animi voluptatem natus dolor aliquam! Libero, velit tempore?</p>
+                <p id={"company"}>Recipe Pilot – Your ultimate guide to delicious and healthy recipes. Discover, explore, and create mouthwatering dishes with ease. Powered by Spoonacular API, we bring you a world of flavors at your fingertips. Happy Cooking!</p>
                 <div className="socials">
                     <i className="fab fa-facebook"></i>
                     <i className="fab fa-instagram"></i>

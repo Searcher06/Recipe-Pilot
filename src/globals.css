@@ -210,6 +210,12 @@ body {
     width:95%;
 
   }
+  .recipe-card .lower-des span{
+    font-size: 13px;
+    padding-left: 2px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
   .custom_link{
     height:30px;
     line-height: 30px;

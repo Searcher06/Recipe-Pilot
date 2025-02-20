@@ -4,9 +4,9 @@ import { QuickRecipeContext } from "../Context/QuickRecipeContext"
 import { Loader } from "./Loader"
 export function Quickmeal(){
     const {recipe,loading,error} = useContext(QuickRecipeContext)
-    loading && <h1>Loading...</h1>
-    error && <h1>{error}</h1>
-    if(recipe.length == 0) return <Loader />
+    if(loading)return <Loader />
+    if(error)return <p style={{textAlign:"center"}}>{"Network Error"}</p>
+    if(recipe.length == 0) return <p>Wait or reload the page</p>
     return  <div className="quickmeal-container">
         {recipe[0].results.slice(0,5).map((current)=>{
      return <div className="recipe-card" key={current.id}>

@@ -11,8 +11,15 @@ import { TopRecipeProvider } from "./Context/TopRecipeContext";
 import { RecipeInfoCard } from "./components/RecipeInfoCard";
 import Navbar from "./components/Navbar";
 import { ResultProvider } from "./Context/Scroll";
+import { useEffect } from "react";
+import Aos from "aos";
 function App() {
-  
+    useEffect(()=>{
+      Aos.init({
+        duration:1000,
+        once:true,
+      })
+    })
     return (
       <>
       <ResultProvider>
