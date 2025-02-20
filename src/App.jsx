@@ -1,4 +1,3 @@
-import "../fontawesome-free-6.6.0-web/css/all.css";
 import { Link, Route,Routes } from "react-router-dom";
 import { Recipes } from "./components/Recipes";
 import Home from "./components/Home";
