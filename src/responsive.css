@@ -18,6 +18,7 @@
     #col{
         font-size: 13px
     }
+    
     .search-result .message{
         font-size: 20px;
     }
@@ -341,6 +342,9 @@
 }
 
 @media (max-width:767px) and (min-width:481px){
+    #li{
+        display: none;
+    }
       .navbar .logo{
         font-size: 20px;
         font-weight: 100;
@@ -452,4 +456,9 @@
     }
 
 
+}
+@media (min-width:767px){
+    #li{
+        display: none;
+    }
 }

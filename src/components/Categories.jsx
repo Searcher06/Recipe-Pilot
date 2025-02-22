@@ -4,7 +4,7 @@ import { Dinner } from "./Dinner";
 import { Lunch } from "./Lunch";
 
 function Categories() {
-  const [category,setCategory] = useState("lunch")
+  const [category,setCategory] = useState("breakfast")
 
   if(category === "breakfast"){
     return <Breakfast setCategory={setCategory} category={category}/>

@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useState,useContext } from "react";
 import r2 from "../people/person 1.jpg";
 import r3 from "../people/person 3.jpg";
 import r4 from "../people/person 2.jpg";
 import r5 from "../people/person 5.jpg";
 import "../components/Review.css"
-
+import { ThemeContext } from "../Context/Context";
 const testimonials = [
   {
     id: 1,
@@ -42,6 +42,8 @@ const testimonials = [
 
 export default function Reviews() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const { theme } = useContext(ThemeContext)
+  const rule = theme == "light" ? "black":"white"
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % testimonials.length);
@@ -52,7 +54,11 @@ export default function Reviews() {
   };
 
   return (
-    <div className="review-container">
+    <div className="review-container" style={{
+      backgroundColor:theme == "light" ? "#f5f5f5":"#1b1b1b"
+    }}>
+      <p style={{color:rule,fontSize:"25px"}}>99.9% Good <span style={{color:"rgb(211, 62, 3)"}}>Reviews</span></p>
+
       <div className="review-wrapper">
         <button onClick={prevSlide} className="review-button left">
           ←

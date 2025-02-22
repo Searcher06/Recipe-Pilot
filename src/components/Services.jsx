@@ -1,6 +1,6 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import Aos from "aos";
-
+import { ThemeContext } from "../Context/Context";
 const Services = () => {
     useEffect(() => {
         Aos.init({
@@ -11,12 +11,14 @@ const Services = () => {
     
         Aos.refresh(); // Ensures AOS updates on route changes
       }, []);
+  const { theme } = useContext(ThemeContext)
+  const rule = theme == "light" ? "black":"white"
   
   return (
     <>
         <section className="services">
             <div className="umbrella"></div>
-            <div className="message"><p>What we offer</p></div>
+            <div className="message"><p style={{color:rule}}>What we offer</p></div>
             <div className="services-container">
                 <div className="boxes" data-aos="zoom-in">
                     <div className="icon">
