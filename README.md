@@ -1,12 +1,51 @@
-<<<<<<< HEAD
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Recipe Pilot
 
-Currently, two official plugins are available:
+Recipe Pilot is a React-based web application that helps users discover and explore various recipes. It features a powerful search bar for quick recipe lookup and organizes recipes into categories like breakfast, lunch, and dinner for easy browsing. The app aims to provide a seamless experience for finding delicious meals efficiently.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-=======
-# Recipe-Pilot
->>>>>>> 5259cd36c17cc8b5320f1d503f46e93c8ee65ab1
+
+## Features
+
+- Recipe Search by name
+- Category based recipe search eg. Breakfast, Lunch and Dinner
+- Step-by-step cooking instrucions
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/Searcher06/Recipe-Pilot
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+
+## Tech Stack
+
+**Client:** React, Javascript, CSS
+
+**APIs:** Spoonacular API
+
+
+## Authors
+
+- [@Searcher06](https://www.github.com/Searcher06)
+
