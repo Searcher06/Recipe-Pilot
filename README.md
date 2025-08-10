@@ -1,51 +1,18 @@
+# Recipe-Pilot
 
-# Recipe Pilot
-
-Recipe Pilot is a React-based web application that helps users discover and explore various recipes. It features a powerful search bar for quick recipe lookup and organizes recipes into categories like breakfast, lunch, and dinner for easy browsing. The app aims to provide a seamless experience for finding delicious meals efficiently.
-
+A React-based web application that helps users discover and explore various recipes.  
+It features a search bar for quick recipe lookup and organizes recipes into categories like breakfast, lunch, and dinner.
 
 ## Features
 
-- Recipe Search by name
-- Category based recipe search eg. Breakfast, Lunch and Dinner
-- Step-by-step cooking instrucions
+- Recipe search by name
+- Category-based recipe search (Breakfast, Lunch, Dinner)
+- Step-by-step cooking instructions
 
-
-## Run Locally
-
-Clone the project
+## Run locally
 
 ```bash
-  git clone https://github.com/Searcher06/Recipe-Pilot
-```
-
-Go to the project directory
-
-```bash
-  cd my-project
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run dev
-```
-
-
-## Tech Stack
-
-**Client:** React, Javascript, CSS
-
-**APIs:** Spoonacular API
-
-
-## Authors
-
-- [@Searcher06](https://www.github.com/Searcher06)
-
+git clone https://github.com/Searcher06/Recipe-Pilot
+cd Recipe-Pilot
+npm install
+npm run dev
